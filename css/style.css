@@ -1,0 +1,567 @@
+/* *,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans' , 'Areal', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* -------------------- Header section start ------------------- */
+.navbar{
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.nav_logo:active{
+    opacity: 0.4;
+}
+.nav_wrapper{
+    display: flex;
+    align-items: center;
+}
+.nav_menu{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+.nav_menu_item{
+    padding: 13px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+.nav_menu_item:hover{
+    border-bottom: 3px solid #191919;
+}
+.nav_menu_item:active{
+    background-color: #191919;
+    color: #FFFFFF;
+}
+.nav_menu_item:hover .dropdown_menu{
+    display: block;
+}
+.nav_menu_item:nth-child(7) :hover {
+    border-bottom: 3px solid transparent;
+}
+.nav_menu_link{
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+.nav_menu_link:active{
+    color: #FFFFFF;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    transform: translateX(-32px) translateY(8px);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    list-style-type: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.dropdown_item{
+    padding: 8px 16px;
+}
+.dropdown_item:hover{
+    background-color: #00BAFC;
+    border-radius: 5px;
+}
+.dropdown_link{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.nav_tel{
+    margin-left: 1px;
+    padding: 8px 16px;
+    border: 3px solid #00BAFC;
+    background: #00BAFC;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.nav_tel:hover{
+    background: #fff;
+    color: #00BAFC;
+}
+.nav_tel:active{
+    background-color: rgba(0, 186, 252, 0.6);
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+
+/* -------------------- Header section end ------------------- */
+
+/* -------------------- Biznes section start ------------------- */
+
+.biznes{
+    margin-top: 56px;
+}
+.biznes_wrapper{
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.biznes_wrapper_left{
+    width: 470px;
+}
+.biznes_title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    color: #000000;
+}
+.biznes_text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.biznes_link{
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.biznes_link:hover{
+    background: rgba(0, 186, 252, 0.8);
+}
+.biznes_link:active{
+    background: rgba(0, 186, 252, 0.6);
+}
+iframe{
+    border-radius:5px;
+}
+
+
+
+/* -------------------- Biznes section start ------------------- */
+
+/* -------------------- Xizmatlar section start ------------------- */
+
+.xizmatlar_wrapper{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.xizmatlar_title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+.xizmatlar_text{
+    margin-top: 16px;
+    width: 719px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.xizmatlar_menu{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.xizmatlar_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 35px;
+    padding: 24px;
+    width: 320px;
+    height: 260px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.first::before{
+    display: inline-block;
+    content: "";
+    width: 202px;
+    height: 130px;
+    background-image: url('../img/website-illustration.png');
+}
+.second::before{
+    display: inline-block;
+    content: "";
+    width: 202px;
+    height: 130px;
+    background-image: url('../img/bot-illustration.png');
+}
+.third::before{
+    display: inline-block;
+    content: "";
+    width: 202px;
+    height: 130px;
+    background-image: url('../img/smm-illustration.png');
+}
+.fourth::before{
+    display: inline-block;
+    content: "";
+    width: 202px;
+    height: 130px;
+    background-image: url('../img/design-illustration.png');
+}
+.fifth::before{
+    display: inline-block;
+    content: "";
+    width: 202px;
+    height: 130px;
+    background-image: url('../img/crm-illustration.png');
+}
+.xizmatlar_item_text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+.xizmatlar_links{
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.xizmatlar_link{
+    margin-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #00BAFC;
+}
+
+/* -------------------- Xizmatlar section start ------------------- */
+
+/* -------------------- Work section start ------------------- */
+
+
+
+.work_wrapper{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work_menu{
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.work_item{
+    width: 832px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.work_item:nth-child(5){
+    margin-bottom: 0;
+}
+.work_item:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.work_item_box{
+    width: 500px;
+    /* margin-left: 32px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.work_item_title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+.work_item_text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+
+/* -------------------- Work section start ------------------- */
+
+/* -------------------- Order section start ------------------- */
+.order{
+    margin-top: 56px;
+}
+.order_wrapper{
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00BAFC;
+    color: #FFFFFF;
+}
+.order_wrapper form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order_title{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+}
+.order_text{
+    margin-bottom: 16px;
+    margin-top: 16px;
+    width: 719px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+.order_contact{
+    margin-top: 24px;
+    padding: 24px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.contact_row{
+    margin-bottom: 16px;
+    width: 300px;
+    padding: 16px;
+    background: #F3F3F3;
+    border: 0;
+    border-radius: 5px;
+}
+.bdn{
+    border:0;
+}
+
+
+/* -------------------- Order section start ------------------- */
+
+/* -------------------- footer section start ------------------- */
+
+.button{
+    padding: 56px 100px;
+    display: flex;
+    background-color: #191919;
+}
+.button_wrapper{
+    width: 320px;
+}
+.button_wrapper_title{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.button_wrapper_text{
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.button_menu{
+    display: flex;
+    list-style-type: none;
+}
+.button_item{
+    margin-left: 87px;
+}
+.button_item_title{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.button_item_menu{
+    list-style-type: none;
+}
+.button_item_link{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.button_item_wrapper{
+    margin-bottom: 8px;
+}
+.telegram::before{
+    margin-right: 8px;
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    content: "";
+    background-image: url('../img/telegram.svg');
+}
+.facebook::before{
+    margin-right: 8px;
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    content: "";
+    background-image: url('../img/facebook.svg');
+}
+.Instagram::before{
+    margin-right: 8px;
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    content: "";
+    background-image: url('../img/instagram.svg');
+}
+
+
+/* -------------------- footer section end ------------------- */
+
+/* -------------------- Page two start ------------------- */
+
+.consult_header{
+    margin-top: 56px;
+    padding: 72px 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.consult_header_wrapper{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #000000;
+}
+.consult_header_text{
+    width: 800px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.consult_center_menu{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    background-color: #F4F4F4;
+}
+.consult_center_item{
+    margin-bottom: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    padding: 32px;
+    display: flex;
+}
+.consult_center_item:nth-child(5){
+    margin-bottom: 0;
+}
+.center_box{
+    width: 500px;
+    height: 338px;
+}
+.center_one::before{
+    margin-right: 40px;
+    width: 200px;
+    height: 128px;
+    display: inline-block;
+    content: "";
+    background-image: url("../img/website-illustration.png");
+}
+.center_two::before{
+    margin-right: 40px;
+    width: 200px;
+    height: 128px;
+    display: inline-block;
+    content: "";
+    background-image: url("../img/bot-illustration.png");
+}
+.center_third::before{
+    margin-right: 40px;
+    width: 200px;
+    height: 128px;
+    display: inline-block;
+    content: "";
+    background-image: url("../img/smm-illustration.png");
+}
+.center_fourth::before{
+    margin-right: 40px;
+    width: 200px;
+    height: 128px;
+    display: inline-block;
+    content: "";
+    background-image: url("../img/design-illustration.png");
+}
+.center_fifth::before{
+    margin-right: 40px;
+    width: 200px;
+    height: 128px;
+    display: inline-block;
+    content: "";
+    background-image: url("../img/crm-illustration.png");
+}
+.center_box_wrapper{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+.center_box_text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.center_box_menu{
+    list-style-type: none;
+}
+.center_box_item{
+    margin-bottom: 8px;
+}
+.center_box_item::before{
+    margin-right: 8px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    content: "";
+    background-color: #00BAFC;
+    border-radius:12px;
+}
+.consult_order{
+    margin-top: 0;
+}
